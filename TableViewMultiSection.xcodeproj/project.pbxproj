@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		D744BDDD1C40F474003C2268 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D744BDDC1C40F474003C2268 /* main.m */; };
 		D744BDE01C40F474003C2268 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D744BDDF1C40F474003C2268 /* AppDelegate.m */; };
-		D744BDE31C40F474003C2268 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D744BDE21C40F474003C2268 /* ViewController.m */; };
 		D744BDE61C40F474003C2268 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D744BDE41C40F474003C2268 /* Main.storyboard */; };
 		D744BDE81C40F474003C2268 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D744BDE71C40F474003C2268 /* Assets.xcassets */; };
 		D744BDEB1C40F474003C2268 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D744BDE91C40F474003C2268 /* LaunchScreen.storyboard */; };
+		D744BDF51C40F578003C2268 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = D744BDF41C40F578003C2268 /* Person.m */; };
+		D744BDF81C40F6DA003C2268 /* TableViewMultiSection.m in Sources */ = {isa = PBXBuildFile; fileRef = D744BDF71C40F6DA003C2268 /* TableViewMultiSection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,14 @@
 		D744BDDC1C40F474003C2268 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D744BDDE1C40F474003C2268 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D744BDDF1C40F474003C2268 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D744BDE11C40F474003C2268 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D744BDE21C40F474003C2268 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D744BDE51C40F474003C2268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D744BDE71C40F474003C2268 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D744BDEA1C40F474003C2268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D744BDEC1C40F474003C2268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D744BDF31C40F578003C2268 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		D744BDF41C40F578003C2268 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		D744BDF61C40F6DA003C2268 /* TableViewMultiSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewMultiSection.h; sourceTree = "<group>"; };
+		D744BDF71C40F6DA003C2268 /* TableViewMultiSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewMultiSection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +63,10 @@
 			children = (
 				D744BDDE1C40F474003C2268 /* AppDelegate.h */,
 				D744BDDF1C40F474003C2268 /* AppDelegate.m */,
-				D744BDE11C40F474003C2268 /* ViewController.h */,
-				D744BDE21C40F474003C2268 /* ViewController.m */,
+				D744BDF61C40F6DA003C2268 /* TableViewMultiSection.h */,
+				D744BDF71C40F6DA003C2268 /* TableViewMultiSection.m */,
 				D744BDE41C40F474003C2268 /* Main.storyboard */,
-				D744BDE71C40F474003C2268 /* Assets.xcassets */,
-				D744BDE91C40F474003C2268 /* LaunchScreen.storyboard */,
-				D744BDEC1C40F474003C2268 /* Info.plist */,
+				D744BDF21C40F54F003C2268 /* Model */,
 				D744BDDB1C40F474003C2268 /* Supporting Files */,
 			);
 			path = TableViewMultiSection;
@@ -74,9 +75,21 @@
 		D744BDDB1C40F474003C2268 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D744BDE71C40F474003C2268 /* Assets.xcassets */,
+				D744BDE91C40F474003C2268 /* LaunchScreen.storyboard */,
+				D744BDEC1C40F474003C2268 /* Info.plist */,
 				D744BDDC1C40F474003C2268 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D744BDF21C40F54F003C2268 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D744BDF31C40F578003C2268 /* Person.h */,
+				D744BDF41C40F578003C2268 /* Person.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +163,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D744BDE31C40F474003C2268 /* ViewController.m in Sources */,
 				D744BDE01C40F474003C2268 /* AppDelegate.m in Sources */,
+				D744BDF81C40F6DA003C2268 /* TableViewMultiSection.m in Sources */,
+				D744BDF51C40F578003C2268 /* Person.m in Sources */,
 				D744BDDD1C40F474003C2268 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
